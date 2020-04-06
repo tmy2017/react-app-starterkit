@@ -28,6 +28,12 @@ const Header = class extends Component {
             />
           </Link>
           <ul className="nav navbar-nav mr-auto">
+            <a
+              target="_blank"
+              href="https://next.form.io/#/project/5d55b19fe19cfa428e9536eb/overview"
+            >
+              go to portal
+            </a>
             <NavLink exact to="/" role="navigation button" className="nav-link">
               <span className="fa fa-home" />
             </NavLink>
