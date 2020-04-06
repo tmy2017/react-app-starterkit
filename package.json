@@ -1,5 +1,5 @@
 {
-  "name": "react-app-starterkit",
+  "name": "03formio-react-starterkit-official-node-cbox-y2004062126-zzppp",
   "private": true,
   "homepage": ".",
   "scripts": {
@@ -37,5 +37,7 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "keywords": [],
+  "description": ""
 }
