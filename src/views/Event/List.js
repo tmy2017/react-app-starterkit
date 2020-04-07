@@ -46,7 +46,7 @@ const List = class extends Component {
       <div className="form-index">
         <h1>Events</h1>
         <Errors errors={errors} />
-        {/* the zzcore! zzHowTo zzformio zzpackage! ((⚪️ zzp._15._y20.0406-2309 */}
+        {/* the zzcore! zzHowTo zzformio zzpackage! ((🚨zzppp._15._y20.0407-0707)) */}
         <SubmissionGrid
           submissions={submissions}
           form={form}
@@ -58,7 +58,7 @@ const List = class extends Component {
             className="glyphicon glyphicon-plus fa fa-plus"
             aria-hidden="true"
           />
-          new contractor answser {form.title}
+          new {form.title}
         </Link>
       </div>
     );
@@ -67,6 +67,7 @@ const List = class extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   const form = selectRoot("form", selectRoot("event", state));
+  // 🚨 or control submissions here? zzQ ❓ ((⚪️ zzp._15._y20.0407-0826))
   const submissions = selectRoot("submissions", selectRoot("event", state));
 
   return {
@@ -83,6 +84,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     getForm: () => dispatch(getForm("event")),
+    // 🚨 useful! for getting submission((ℹ️ zzpp._15._y20.0407-0717))
+    // zzRef - https://github.com/formio/react-formio#actions-4
     getSubmissions: (page, query) =>
       dispatch(getSubmissions("event", page, query)),
     onAction: (submission, action) => {
